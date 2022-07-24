@@ -3,7 +3,7 @@ console.log("I'm ready!");
 // Iteration 1: Names and Input
 
 let hacker1 = "Noemi";
-let hacker2 = "Noemi també";
+let hacker2 = "Noemi tambe";
 console.log("The driver's name is " + hacker1);
 console.log("The navigator's name is " + hacker2);
 
@@ -42,11 +42,12 @@ console.log(reverse);
 
 //comparació per ordre alfabetic
 
-let team = [capitals, reverse];
-if (team.sort == [capitals, reverse]) {
+if (capitals > reverse) {
   console.log("The driver's name goes first.");
-} else if (team.sort == [reverse, capitals]) {
+} else if (reverse > capitals) {
   console.log("Yo, the navigator goes first definitely");
-} else {
+} else if (capitals == reverse) {
   console.log("What?! You both have the same name?");
+} else {
+  console.log("Oh dear... we should have a mistake");
 }
