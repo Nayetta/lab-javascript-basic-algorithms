@@ -28,7 +28,7 @@ if (driver > navigator) {
 // resultat: el nom del driver ha de sortir lletra a lletra i en majuscula
 let capitals = "";
 for (let i = 0; i < hacker1.length; i++) {
-  capitals = capitals + " " + hacker1[i];
+  capitals = capitals + hacker1[i] + " ";
 }
 console.log(capitals.toUpperCase());
 
@@ -50,4 +50,45 @@ if (capitals > reverse) {
   console.log("What?! You both have the same name?");
 } else {
   console.log("Oh dear... we should have a mistake");
+}
+
+//BONUS 1
+//??? com es posa el lorem ipsum be??
+// import { LoremIpsum } from "lorem-ipsum";
+
+// const lorem = new LoremIpsum({
+//   sentencesPerParagraph: {
+//     max: 8,
+//     min: 4,
+//   },
+//   wordsPerSentence: {
+//     max: 16,
+//     min: 4,
+//   },
+// });
+
+// let paragrafs = lorem.generateParagraphs(3);
+
+// console.log(paragrafs);
+
+// let paraules = paragrafs.split(" ");
+
+// console.log(paraules.length);
+
+// console.log(paragrafs.split(" et ").length - 1);
+
+//BONUS 2
+
+let phraseToCheck = "amor roma";
+
+let reves = "";
+for (let i = 0; i < phraseToCheck.length; i++) {
+  reves = phraseToCheck[i] + reves;
+}
+console.log(reves);
+
+if (phraseToCheck == reves) {
+  console.log("Yes it is a palindome");
+} else {
+  console.log("Oh dear... it is not, sorry");
 }
